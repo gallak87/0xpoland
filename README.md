@@ -7,7 +7,7 @@ twitter: https://twitter.com/0xPoland
 # How to run
 1. install deps (requires nodejs, npm)
 ```bash
-npm -i ganache-cli truffl
+npm -i ganache-cli truffle
 ```
 
 2. in 1 terminal, run
@@ -28,7 +28,8 @@ truffle migrate > output.log
 ## Testing answers
 1. Now you are ready to test. Edit reveal.js with your answer and run:
 ```bash
-truffle exec migrations/4_reveal.js --network development
+truffle exec migrations/4_reveal.js --network development > output.log
 ```
+2. Check the output, if it has 'invalid' you guessed wrong.
 
 if you get stuck, refer to this article https://medium.com/haloblock/deploy-your-own-smart-contract-with-truffle-and-ganache-cli-beginner-tutorial-c46bce0bd01e
