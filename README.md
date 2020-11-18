@@ -14,13 +14,12 @@ npm -i ganache-cli truffle
 ```bash
 ganache-cli
 ```
-
-3. in another terminal at this folder, deploy the contract
+3. in another terminal at this folder, compile the contract
 ```bash
 truffle compile Puzzle
 ```
 
-4. run the migrations
+4. and then deploy it
 ```bash
 truffle migrate > output.log
 ```
